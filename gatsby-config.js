@@ -1,4 +1,12 @@
 module.exports = {
-  /* Your site config here */
-  plugins: []
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-material-ui',
+      options: {
+        stylesProvider: {
+          injectFirst: true
+        }
+      }
+    }
+  ]
 }
