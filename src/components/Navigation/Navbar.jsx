@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import { makeStyles, Box, Container, Grid, Hidden } from '@material-ui/core'
 import throttle from 'lodash/throttle'
 import logo from '../../assets/images/logo.svg'
@@ -36,6 +37,19 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Navbar = ({ toggleSideDrawer }) => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            foo
+          }
+        }
+      }
+    `
+  )
+  console.log(data.site.siteMetadata.foo)
+
   const classes = useStyles()
   const navElement = useRef(null)
 
