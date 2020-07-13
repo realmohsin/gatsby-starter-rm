@@ -8,10 +8,10 @@ export default function Home ({ data }) {
     <Layout>
       <Box height='500rem' bgcolor='teal'>
         <h1 style={{ paddingTop: '300px', textAlign: 'center' }}>
-          {data.allContentfulGatsbyStarterPage.nodes[0].title}
+          {data.allContentfulPage.nodes[0].title}
         </h1>
         <h3 style={{ textAlign: 'center' }}>
-          {data.allContentfulGatsbyStarterPage.nodes[0].pageNumber}
+          {data.allContentfulPage.nodes[0].pageNumber}
         </h3>
       </Box>
     </Layout>
@@ -20,7 +20,7 @@ export default function Home ({ data }) {
 
 export const query = graphql`
   query {
-    allContentfulGatsbyStarterPage {
+    allContentfulPage {
       nodes {
         title
         pageNumber

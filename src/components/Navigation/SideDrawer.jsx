@@ -48,7 +48,7 @@ const SideDrawer = ({ showing, closeSideDrawer }) => {
 
   const sideDrawerClasses = [classes.sideDrawer]
   if (showing) {
-    console.log('showing: ', showing)
+    // console.log('showing: ', showing)
     sideDrawerClasses.push('showing')
   }
   return (

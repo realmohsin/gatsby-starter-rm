@@ -48,7 +48,6 @@ const Navbar = ({ toggleSideDrawer }) => {
       }
     `
   )
-  console.log(data.site.siteMetadata.foo)
 
   const classes = useStyles()
   const navElement = useRef(null)

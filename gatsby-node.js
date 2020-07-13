@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allContentfulGatsbyStarterPage {
+      allContentfulPage {
         nodes {
           title
           pageNumber
@@ -25,15 +25,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.allContentfulGatsbyStarterPage.nodes.forEach(
-    ({ title, pageNumber }) => {
-      createPage({
-        path: title.replace(' ', '-'),
-        component: path.resolve(`./src/templates/template-page.js`),
-        context: {
-          pageNumber
-        }
-      })
-    }
-  )
+  result.data.allContentfulPage.nodes.forEach(({ title, pageNumber }) => {
+    createPage({
+      path: title.replace(' ', '-'),
+      component: path.resolve(`./src/templates/template-page.js`),
+      context: {
+        pageNumber
+      }
+    })
+  })
 }

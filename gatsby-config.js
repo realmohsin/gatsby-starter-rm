@@ -1,4 +1,7 @@
-if (process.env.NODE_ENV === 'development') {
+if (
+  process.env.NODE_ENV === 'development' ||
+  process.env.NODE_ENV === 'production'
+) {
   require('dotenv').config({
     path: '.env.development'
   })
@@ -30,6 +33,9 @@ module.exports = {
           injectFirst: true
         }
       }
-    }
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-transition-link'
   ]
 }

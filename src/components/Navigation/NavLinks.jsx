@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { Link } from 'gatsby'
 import { makeStyles, Box } from '@material-ui/core'
 
@@ -41,16 +42,24 @@ const NavLinks = props => {
         {subTab === 1 && (
           <ul className={classes.subNav}>
             <li>
-              <Link to={`/Page-${1}`}>Page 1</Link>
+              <AniLink fade duration={1} to={`/Page-${1}`}>
+                Page 1
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${2}`}>Page 2</Link>
+              <AniLink fade duration={1} to={`/Page-${2}`}>
+                Page 2
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${3}`}>Page 3</Link>
+              <AniLink fade duration={1} to={`/Page-${3}`}>
+                Page 3
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${4}`}>Page 4</Link>
+              <AniLink fade duration={1} to={`/Page-${4}`}>
+                Page 4
+              </AniLink>
             </li>
           </ul>
         )}
@@ -64,16 +73,24 @@ const NavLinks = props => {
         {subTab === 2 && (
           <ul className={classes.subNav}>
             <li>
-              <Link to={`/Page-${5}`}>Page 5</Link>
+              <AniLink fade duration={1} to={`/Page-${5}`}>
+                Page 5
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${6}`}>Page 6</Link>
+              <AniLink fade duration={1} to={`/Page-${6}`}>
+                Page 6
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${7}`}>Page 7</Link>
+              <AniLink fade duration={1} to={`/Page-${7}`}>
+                Page 7
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${8}`}>Page 8</Link>
+              <AniLink fade duration={1} to={`/Page-${8}`}>
+                Page 8
+              </AniLink>
             </li>
           </ul>
         )}
@@ -87,16 +104,24 @@ const NavLinks = props => {
         {subTab === 3 && (
           <ul className={classes.subNav}>
             <li>
-              <Link to={`/Page-${9}`}>Page 9</Link>
+              <AniLink fade duration={1} to={`/Page-${9}`}>
+                Page 9
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${10}`}>Page 10</Link>
+              <AniLink fade duration={1} to={`/Page-${10}`}>
+                Page 10
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${11}`}>Page 11</Link>
+              <AniLink fade duration={1} to={`/Page-${11}`}>
+                Page 11
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${12}`}>Page 12</Link>
+              <AniLink fade duration={1} to={`/Page-${12}`}>
+                Page 12
+              </AniLink>
             </li>
           </ul>
         )}
@@ -110,16 +135,24 @@ const NavLinks = props => {
         {subTab === 4 && (
           <ul className={classes.subNav}>
             <li>
-              <Link to={`/Page-${13}`}>Page 13</Link>
+              <AniLink fade duration={1} to={`/Page-${13}`}>
+                Page 13
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${14}`}>Page 14</Link>
+              <AniLink fade duration={1} to={`/Page-${14}`}>
+                Page 14
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${15}`}>Page 15</Link>
+              <AniLink fade duration={1} to={`/Page-${15}`}>
+                Page 15
+              </AniLink>
             </li>
             <li>
-              <Link to={`/Page-${16}`}>Page 16</Link>
+              <AniLink fade duration={1} to={`/Page-${16}`}>
+                Page 16
+              </AniLink>
             </li>
           </ul>
         )}
